@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,12 @@
 		94D0901725E0BE8400BCA6A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D0901525E0BE8400BCA6A0 /* Main.storyboard */; };
 		94D0901925E0BE8800BCA6A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94D0901825E0BE8800BCA6A0 /* Assets.xcassets */; };
 		94D0901C25E0BE8800BCA6A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D0901A25E0BE8800BCA6A0 /* LaunchScreen.storyboard */; };
+		94D0902725E0C26E00BCA6A0 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 94D0902625E0C26E00BCA6A0 /* AlamofireImage */; };
+		94D0902E25E0C41F00BCA6A0 /* ImagePresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D0902D25E0C41F00BCA6A0 /* ImagePresentViewController.swift */; };
+		94D0903725E0C46B00BCA6A0 /* ImagePresentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D0903625E0C46B00BCA6A0 /* ImagePresentViewModel.swift */; };
+		94D0904225E0C8D600BCA6A0 /* JSONPlaceholderApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D0904125E0C8D600BCA6A0 /* JSONPlaceholderApi.swift */; };
+		94D0904725E0C9F800BCA6A0 /* JSONPlaceholderPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D0904625E0C9F800BCA6A0 /* JSONPlaceholderPhoto.swift */; };
+		94D0905225E0F25500BCA6A0 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D0905125E0F25500BCA6A0 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,11 @@
 		94D0901825E0BE8800BCA6A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94D0901B25E0BE8800BCA6A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94D0901D25E0BE8800BCA6A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94D0902D25E0C41F00BCA6A0 /* ImagePresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePresentViewController.swift; sourceTree = "<group>"; };
+		94D0903625E0C46B00BCA6A0 /* ImagePresentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePresentViewModel.swift; sourceTree = "<group>"; };
+		94D0904125E0C8D600BCA6A0 /* JSONPlaceholderApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPlaceholderApi.swift; sourceTree = "<group>"; };
+		94D0904625E0C9F800BCA6A0 /* JSONPlaceholderPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPlaceholderPhoto.swift; sourceTree = "<group>"; };
+		94D0905125E0F25500BCA6A0 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94D0902725E0C26E00BCA6A0 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,13 +70,34 @@
 			children = (
 				94D0900F25E0BE8400BCA6A0 /* AppDelegate.swift */,
 				94D0901125E0BE8400BCA6A0 /* SceneDelegate.swift */,
+				94D0903C25E0C81B00BCA6A0 /* Source */,
+				94D0904525E0C9C400BCA6A0 /* Model */,
 				94D0901325E0BE8400BCA6A0 /* ViewController.swift */,
+				94D0902D25E0C41F00BCA6A0 /* ImagePresentViewController.swift */,
+				94D0903625E0C46B00BCA6A0 /* ImagePresentViewModel.swift */,
+				94D0905125E0F25500BCA6A0 /* CollectionViewCell.swift */,
 				94D0901525E0BE8400BCA6A0 /* Main.storyboard */,
 				94D0901825E0BE8800BCA6A0 /* Assets.xcassets */,
 				94D0901A25E0BE8800BCA6A0 /* LaunchScreen.storyboard */,
 				94D0901D25E0BE8800BCA6A0 /* Info.plist */,
 			);
 			path = JSONPlaceholder;
+			sourceTree = "<group>";
+		};
+		94D0903C25E0C81B00BCA6A0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				94D0904125E0C8D600BCA6A0 /* JSONPlaceholderApi.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		94D0904525E0C9C400BCA6A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94D0904625E0C9F800BCA6A0 /* JSONPlaceholderPhoto.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +116,9 @@
 			dependencies = (
 			);
 			name = JSONPlaceholder;
+			packageProductDependencies = (
+				94D0902625E0C26E00BCA6A0 /* AlamofireImage */,
+			);
 			productName = JSONPlaceholder;
 			productReference = 94D0900C25E0BE8400BCA6A0 /* JSONPlaceholder.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +146,9 @@
 				Base,
 			);
 			mainGroup = 94D0900325E0BE8400BCA6A0;
+			packageReferences = (
+				94D0902525E0C26E00BCA6A0 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = 94D0900D25E0BE8400BCA6A0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94D0904225E0C8D600BCA6A0 /* JSONPlaceholderApi.swift in Sources */,
+				94D0902E25E0C41F00BCA6A0 /* ImagePresentViewController.swift in Sources */,
+				94D0905225E0F25500BCA6A0 /* CollectionViewCell.swift in Sources */,
+				94D0903725E0C46B00BCA6A0 /* ImagePresentViewModel.swift in Sources */,
 				94D0901425E0BE8400BCA6A0 /* ViewController.swift in Sources */,
 				94D0901025E0BE8400BCA6A0 /* AppDelegate.swift in Sources */,
+				94D0904725E0C9F800BCA6A0 /* JSONPlaceholderPhoto.swift in Sources */,
 				94D0901225E0BE8400BCA6A0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +333,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JJ3J93P9PB;
 				INFOPLIST_FILE = JSONPlaceholder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +353,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JJ3J93P9PB;
 				INFOPLIST_FILE = JSONPlaceholder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +387,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		94D0902525E0C26E00BCA6A0 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		94D0902625E0C26E00BCA6A0 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 94D0902525E0C26E00BCA6A0 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 94D0900425E0BE8400BCA6A0 /* Project object */;
 }
